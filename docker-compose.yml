@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  # Application web simple avec nginx
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - web_data:/usr/share/nginx/html
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
