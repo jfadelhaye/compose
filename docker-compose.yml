@@ -3,7 +3,7 @@ version: '3.8'
 services:
   # Application web simple avec nginx
   web:
-    image: nginx:alpine
+    image: redis:alpine
     ports:
       - "8080:80"
     environment:
